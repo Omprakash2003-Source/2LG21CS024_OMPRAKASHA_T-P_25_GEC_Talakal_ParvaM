@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js Example</title>
+</head>
+
+<body>
+
+        <div>
+            <label for="text1" ><b>First Name</b></label>
+            <input type="text" id="txt1"  name="fname" value="" placeholder="Enter Your First Name"> 
+        </div>
+        <div>
+            <label for="text2"><b>Last Name</b></label>
+            <input type="text" id="txt2"  name="lname" value="" placeholder="Enter Your Last Name">
+        </div>
+        <div>
+            <button onclick="getfullname()"><b>Submit</b></button>
+
+        </div>
+        <h1 style="color:rgba(185, 9, 12, 0.67)" id="flname">
+
+        </h1>
+
+        <script>
+            function getfullname (){
+
+                var fname = document.getElementById('txt1').value; 
+                var lname = document.getElementById('txt2').value; 
+                var fullname = fname + " " + lname;
+                document.getElementById('flname').innerHTML = fullname;
+
+            }
+        </script>
+
+    </body>
+</html>

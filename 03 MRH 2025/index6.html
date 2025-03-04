@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Example </title>
+</head>
+
+<body>
+
+    <form name=f1>
+        <div>
+            <label for="txt1">First Number</label><BR>
+            <input type="txt" id="val1" name="val1" value="" placeholder="enter the value">
+        </div>
+        <div>
+            <label for="txt1">Second Number</label><BR>
+            <input type="txt" id="val2" name="val2" value="" placeholder="enter the value">
+        </div>
+        <div>
+            <label for="txt1">Result</label><BR>
+            <input type="txt" id="val3" name="val3" value="" placeholder="enter the value">
+        </div>
+        <label for="txt1"></label>
+        <input type="button" id="b1" name="b1" value="Add" style="color:brown;" onclick="add()">
+        </div>
+        <label for="txt1"></label>
+        <input type="button" id="b2" name="b2" value="Subtract" style="color:brown;" onclick="sub()">
+        </div><label for="txt1"></label>
+        <input type="button" id="b3" name="b3" value="Multiplication" style="color:brown;" onclick="mul()">
+        </div>
+        <label for="txt1"></label>
+        <input type="button" id="b4" name="b4" value="Division" style="color:brown;" onclick="div()">
+        </div>
+
+    </form>
+
+
+    <script type="text/javascript">{
+            function add() {
+                document.f1.val3.value = parseFloat(document.f1.val1.value) + parseFloat(document.f1.val2.value)
+            }
+            function sub() {
+                document.f1.val3.value = parseFloat(document.f1.val1.value) - parseFloat(document.f1.val2.value)
+            }
+            function mul() {
+                document.f1.val3.value = parseFloat(document.f1.val1.value) * parseFloat(document.f1.val2.value)
+            }
+            function div() {
+                document.f1.val3.value = parseFloat(document.f1.val1.value) / parseFloat(document.f1.val2.value)
+            }
+
+
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Table Example</title>
+<style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+    <div>
+        <label for="val1">Value 1</label>
+        <input type="text" id="val1" name="val1" placeholder="Enter value">
+    </div>
+    <div>
+        <label for="val2">Value 2</label>
+        <input type="text" id="val2" name="val2" placeholder="Enter value">
+    </div>
+    <div><button onclick="getResult()">Submit</button></div>
+
+    <div id="flvalue"></div>
+
+    <script>
+        function getResult() {
+            var val1 = document.getElementByfloat('val1').value;
+            var val2 = document.getElementByfloat('val2').value;
+            var result;
+
+            if (!isNaN(val1) && !isNaN(val2) && val1 !== "" && val2 !== "") {
+                let val1 = parseFloat(val1);
+                let val2 = parseFloat(val2);
+
+                let resultreverse = val1 + val2;
+                let resultconcat = val1 + val2;
+
+                
+                result =
+            
+
+                <table style="width:60%">
+                    <tr>
+                      <th>X</th>
+                      <th>Y</th>
+                      <th>concat</th>
+                      <th>reverse</th> 
+                    </tr>
+                    <tr>
+                      <td>abc</td>
+                      <td>xyz</td>
+                      <td>abcxyz</td>
+                      <td>zyxcba</td>
+                    </tr>
+                   
+                      
+                    
+                  </table>
+                ;
+                
+            } else {
+                result = "Please enter valid value.";
+            }
+
+            document.getElementByfloat('flvalue').innerHTML = result;
+        }
+    </script>
+</body>
+</html>

@@ -6,23 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+        background-image: url('/images/image.png');
+        background-repeat: no-repeat;
+        background-size: 100%, 100%;
+
+    }
+    </style>
 </head>
 <body>
 
   <div class="container mt-3">
-    <h2>Student List</h2>
-    <a th:href="@{/users/create}" class="btn btn-warning m-3">Add Student</a>
-    <a th:href="@{/Om/create}" class="btn btn-warning m-3">Add Employee</a>
+    <h1 style="color:black;"><b>Student List</b></h1>
+    <a th:href="@{/users/create}" class="btn btn-warning m-3"><b>Add Student</b></a>
+    <a th:href="@{/Om/create}" class="btn btn-warning m-3"><b>Add Employee</b></a>
     <br>
     
     <table class="table table-success table-striped">
     <thead class="table-dark">
       <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>phone</th>
-        <th>Action</th>
+        <th><b>ID</b></th>
+        <th><b>Name</b></th>
+        <th><b>Email</b></th>
+        <th><b>phone</b></th>
+        <th><b>Adress</b></th>
+        <th><b>Gender</b></th>
+        <th><b>Dob</b></th>
+        <th><b>File</b></th>
+        <th><b>Language</b></th>
+        <th><b>section</b></th>
+        <th><b>Action</b></th>
       </tr>
     </thead>
     <tbody>
@@ -31,9 +45,15 @@
         <td  th:text="${stu.name}"></td>
         <td  th:text="${stu.email}"></td>
         <td  th:text="${stu.phone}"></td>
+        <td  th:text="${stu.adress}"></td>
+        <td  th:text="${stu.gender}"></td>
+        <td  th:text="${stu.dob}"></td>
+        <td  th:text="${stu.file}"></td>
+        <td  th:text="${stu.language}"></td>
+        <td  th:text="${stu.section}"></td>
         <td>
-          <a  th:href="@{/users/edit/{id}(id=${stu.id})}" class="btn btn-primary">Edit</a>
-          <a  th:href="@{/users/delete/{id}(id=${stu.id})}"class="btn btn-danger">Delete</a>
+          <a  th:href="@{/users/edit/{id}(id=${stu.id})}" class="btn btn-primary"><b>Edit</b></a>
+          <a  th:href="@{/users/delete/{id}(id=${stu.id})}"class="btn btn-danger"><b>Delete</b></a>
         </td>
       </tr>
     </tbody>

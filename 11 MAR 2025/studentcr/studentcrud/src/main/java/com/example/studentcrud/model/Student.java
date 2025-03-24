@@ -1,5 +1,9 @@
 package com.example.studentcrud.model;
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 
 @Entity
@@ -12,6 +16,12 @@ public class Student {
     private String name;
     private String email;
     private String phone;
+    private String adress;
+    private String gender;
+    private String dob;
+    private String file;
+    private String language;
+    private String section;
 
     public Long getId() {
         return id;
@@ -43,4 +53,50 @@ public class Student {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+    public String getAdress() {
+        return adress;
+    }
+
+    public void setAdress(String adress) {
+        this.adress = adress;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getDob() {
+        return dob;
+    }
+
+    public void setDob(String dob) {
+        this.dob = dob;
+    }
+
+    public String getFile() {
+        return file;
+    }
+
+    public void setFile(String file) {
+        this.file=file;
+    } 
+    public String getLanguage() {
+        return language;
+    }
+
+     public void setLanguage(String language) {
+        this.language=language;
+    }
+    public String getSection() {
+        return section;
+    }
+
+     public void setSection(String section) {
+        this.section=section;
+    }
+
 }

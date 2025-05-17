@@ -1,0 +1,141 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Area - Online Job Portal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+    .font-adminarea {
+      font-family: 'Roboto Condensed', sans-serif;
+      font-style: italic;
+      font-weight: 700;
+      font-size: 1.125rem; /* 18px */
+      letter-spacing: 0.05em;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-white flex flex-col md:flex-row">
+  <!-- Sidebar -->
+  <aside class="flex flex-col bg-purple-700 text-white w-56">
+    <div class="px-4 py-3 border-b border-purple-800">
+     <h1 class="font-extrabold types new roman text-sm select-none">
+      Admin Area
+     </h1>
+    </div>
+    <nav class="flex-1 px-2 py-4 space-y-2 overflow-y-auto">
+     <a aria-current="page" class="flex items-center gap-3 px-3 py-2 rounded-md bg-purple-900 text-white" th:href="@{/admin/dashboard}">
+      <i class="fas fa-palette text-lg">
+      </i>
+      <span class="text-types new roman">
+       Dashboard
+      </span>
+     </a>
+     <a class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-purple-800" th:href="@{/new-job}">
+      <i class="fas fa-plus-square text-sm">
+      </i>
+      <span class="text-types new roman">New Job</span>
+     </a>
+     <a class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-purple-800" th:href="@{/job-list}">
+      <i class="fas fa-briefcase text-sm">
+      </i>
+      <span class="text-types new roman">
+       Job List
+      </span>
+     </a>
+     <a class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-purple-800" th:href="@{/viewresume}">
+      <i class="fas fa-file-alt text-sm">
+      </i>
+      <span class="text-types new roman">
+       View Resume
+      </span>
+     </a>
+     <a class="flex items-center gap-3 px-3 py-2 rounded-md hover:bg-purple-800" th:href="@{/contact2}">
+      <i class="fas fa-comments text-sm">
+      </i>
+      <span class="text-types new roman">
+       Contact List
+      </span>
+     </a>
+    </nav>
+    <div class="p-4 border-t border-purple-800">
+     <button class="w-full text-xs font-normal border border-purple-400 rounded-md py-1.5 hover:bg-purple-800 transition" type="button">
+      Logout
+     </button>
+    </div>
+   </aside>
+  <!-- Main content -->
+  <main class="flex-1 p-4 md:p-6">
+    <header class="mb-4">
+      <h2 class="text-purple-700 font-bold text-lg md:text-xl select-none">Online Job Portal</h2>
+    </header>
+
+    <section>
+      <h3 class="text-center text-gray-500 text-sm mb-3 select-none">Job List/Detail</h3>
+      <div class="overflow-x-auto">
+        <table class="w-full border border-gray-200 text-xs md:text-sm text-gray-600">
+  <thead>
+    <tr class="bg-purple-700 text-white text-[10px] md:text-xs">
+      <th class="border border-purple-700 px-1 py-2 text-center font-semibold">Sr.No</th>
+      <th class="border border-purple-700 px-1 py-2 text-center font-semibold">Job Title</th>
+      <th class="border border-purple-700 px-1 py-2 text-center font-semibold">No.Of Post</th>
+      <th class="border border-purple-700 px-1 py-2 text-center font-semibold">Qualification Required</th>
+      <th class="border border-purple-700 px-1 py-2 text-center font-semibold">Experience Required</th>
+      <th class="border border-purple-700 px-1 py-2 text-center font-semibold">Last Date To Apply</th>
+      <th class="border border-purple-700 px-1 py-2 text-center font-semibold">Company</th>
+      <th class="border border-purple-700 px-1 py-2 text-center font-semibold">Country</th>
+      <th class="border border-purple-700 px-1 py-2 text-center font-semibold">State</th>
+      <th class="border border-purple-700 px-1 py-2 text-center font-semibold">Job Posted Date</th>
+      <th class="border border-purple-700 px-1 py-2 text-center font-semibold">Edit</th>
+      <th class="border border-purple-700 px-1 py-2 text-center font-semibold">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr th:each="job, iterStat : ${jobs}" class="border border-gray-200 text-center text-[9px] md:text-xs">
+      <td class="border border-gray-200 px-1 py-2" th:text="${iterStat.count}"></td>
+      <td class="border border-gray-200 px-1 py-2 whitespace-normal" th:text="${job.jobTitle}"></td>
+      <td class="border border-gray-200 px-1 py-2" th:text="${job.numberOfPost}"></td>
+      <td class="border border-gray-200 px-1 py-2" th:text="${job.qualification}"></td>
+      <td class="border border-gray-200 px-1 py-2" th:text="${job.experience}"></td>
+      <td class="border border-gray-200 px-1 py-2" th:text="${job.lastDateToApply}"></td>
+      <td class="border border-gray-200 px-1 py-2 whitespace-normal" th:text="${job.companyName}"></td>
+      <td class="border border-gray-200 px-1 py-2" th:text="${job.country}"></td>
+      <td class="border border-gray-200 px-1 py-2" th:text="${job.state}"></td>
+      <td class="border border-gray-200 px-1 py-2" th:text="${job.postedDate}"></td>
+      <td class="border border-gray-200 px-1 py-2">
+        <button aria-label="Edit job" class="text-purple-700 hover:text-purple-900">
+          <i class="fas fa-pencil-alt"></i>
+        </button>
+      </td>
+      <td class="border border-gray-200 px-1 py-2">
+        <button aria-label="Delete job" class="text-purple-700 hover:text-purple-900">
+          <i class="fas fa-times"></i>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+
+      <nav class="mt-4 flex space-x-2 select-none">
+        <button
+          class="border border-gray-300 px-3 py-1 text-xs md:text-sm text-gray-600 hover:bg-gray-100 rounded"
+          aria-label="Page 1"
+        >
+          1
+        </button>
+        <button
+          class="border border-gray-300 px-3 py-1 text-xs md:text-sm text-gray-600 hover:bg-gray-100 rounded"
+          aria-label="Page 2"
+        >
+          2
+        </button>
+      </nav>
+    </section>
+  </main>
+</body>
+</html>

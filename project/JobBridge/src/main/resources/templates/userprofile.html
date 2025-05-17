@@ -1,0 +1,104 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Profile - Job Finder
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-gray-800">
+  <header class="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
+   <div class="flex items-center space-x-3">
+    <img src="C:\Users\amreen\Desktop\Training and Placement Feb25-Parvam\daily tasks\2LG21CS002_AMREEN_T-P_25_GEC_Talakal_ParvaM\7_apr_25\JOB PORTAL\JOB PORTALM\themewagon.github.io\jobfinderportal\img\logo.jpg" alt=""></a>
+   </div>
+   <nav class="hidden md:flex space-x-8 text-sm text-gray-700 font-normal">
+    <a class="hover:text-gray-900" th:href="@{/}">
+     Home
+    </a>
+    <a class="hover:text-gray-900" th:href="@{/job-listing}">
+     Find a Jobs
+    </a>
+    <a class="hover:text-gray-900" th:href="@{/about}">
+     About
+    </a>
+    <a class="hover:text-gray-900" th:href="@{/contact}">
+     Contact
+    </a>
+   </nav>
+   <div class="flex space-x-4">
+    <button class="bg-pink-600 text-white text-sm font-semibold px-6 py-2 rounded-md hover:bg-pink-700 transition">
+     Profile
+    </button>
+    <button class="border border-pink-600 text-pink-600 text-sm font-semibold px-6 py-2 rounded-md hover:bg-pink-50 transition">
+     Logout
+    </button>
+   </div>
+  </header>
+  <main class="max-w-5xl mx-auto mt-10 px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row gap-8">
+   <section class="border border-gray-200 rounded-md p-6 flex flex-col items-center text-center max-w-xs mx-auto md:mx-0">
+    <img alt="Avatar image of a man with black hair and glasses wearing a black shirt" class="w-30 h-30 rounded-md mb-4" height="120" src="https://storage.googleapis.com/a1aa/image/5517393b-e689-463d-fb15-fe16ca336b7c.jpg" width="120"/>
+    <h2 class="font-semibold text-lg text-gray-900">
+     Omprakash Slimath
+    </h2>
+    <p class="text-gray-500 text-sm mt-1">
+     @Test1
+    </p>
+    <p class="text-gray-500 text-sm mt-1 flex items-center justify-center space-x-1">
+     <i class="fas fa-map-marker-alt text-gray-400">
+     </i>
+     <span>
+      India
+     </span>
+    </p>
+   </section>
+   <section class="border border-gray-200 rounded-md p-6 flex-1 max-w-3xl">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-y-4 gap-x-6 text-sm text-gray-700">
+     <div class="font-semibold">
+      Full Name
+     </div>
+     <div class="sm:col-span-2 text-gray-500">
+      Omprakasha salimath
+     </div>
+     <div class="font-semibold">
+      Email
+     </div>
+     <div class="sm:col-span-2 text-gray-500">
+      Omprakash@gmail.com
+     </div>
+     <div class="font-semibold">
+      Mobile
+     </div>
+     <div class="sm:col-span-2 text-gray-500">
+      8976950485
+     </div>
+     <div class="font-semibold">
+      Address
+     </div>
+     <div class="sm:col-span-2 text-gray-500">
+      C.P. Telica, Rd No.27, Behind Sion Garage, Near Shiv Temple, Wagle Estate, Thane - West
+     </div>
+     <div class="font-semibold">
+      Resume Uploaded
+     </div>
+     <div class="sm:col-span-2 text-gray-500">
+      Uploaded
+     </div>
+    </div>
+    <div class="flex space-x-4">
+    <button class="bg-pink-600 text-white text-sm font-semibold px-6 py-2 rounded-md hover:bg-pink-700 transition">
+     <a th:href="@{/job-listing}">Done</a>
+    </button>
+  </div>
+   </section>
+  </main>
+ </body>
+</html>

@@ -1,0 +1,23 @@
+HTTrack3.49-2+htsswf+htsjava launched on Mon, 21 Apr 2025 10:39:54 at https://themewagon.github.io/jobfinderportal/index.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://themewagon.github.io/jobfinderportal/index.html -O1 "C:\Users\91938\OneDrive\Desktop\JOB PORTAL\JOB PORTALM" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+10:40:10	Error: 	"Not Found" (404) at link https://themewagon.github.io/jobfinderportal/site.webmanifest (from https://themewagon.github.io/jobfinderportal/index.html)
+10:40:46	Error: 	"Not Found" (404) at link https://themewagon.github.io/jobfinderportal/assets/css/owl.video.play.png (from https://themewagon.github.io/jobfinderportal/assets/css/owl.carousel.min.css)
+10:40:47	Error: 	"Not Found" (404) at link https://themewagon.github.io/jobfinderportal/assets/img/slider/slider-img-1.jpg (from https://themewagon.github.io/jobfinderportal/assets/css/style.css)
+10:40:47	Error: 	"Not Found" (404) at link https://themewagon.github.io/jobfinderportal/assets/img/background-img/bg-img-2.jpg (from https://themewagon.github.io/jobfinderportal/assets/css/style.css)
+10:40:47	Error: 	"Not Found" (404) at link https://themewagon.github.io/jobfinderportal/assets/img/background-img/bg-img-3.jpg (from https://themewagon.github.io/jobfinderportal/assets/css/style.css)
+10:40:47	Error: 	"Not Found" (404) at link https://themewagon.github.io/jobfinderportal/assets/img/banner/bradcam.png (from https://themewagon.github.io/jobfinderportal/assets/css/style.css)
+10:40:47	Error: 	"Not Found" (404) at link https://themewagon.github.io/jobfinderportal/assets/img/banner/bradcam2.png (from https://themewagon.github.io/jobfinderportal/assets/css/style.css)
+10:40:47	Error: 	"Not Found" (404) at link https://themewagon.github.io/jobfinderportal/assets/img/banner/bradcam3.png (from https://themewagon.github.io/jobfinderportal/assets/css/style.css)
+10:40:47	Error: 	"Not Found" (404) at link https://themewagon.github.io/jobfinderportal/assets/img/favicon.png (from https://themewagon.github.io/jobfinderportal/blog.html)
+10:40:47	Error: 	"Not Found" (404) at link https://themewagon.github.io/jobfinderportal/assets/js/gijgo.min.js (from https://themewagon.github.io/jobfinderportal/single-blog.html)
+10:40:47	Error: 	"Not Found" (404) at link https://themewagon.github.io/jobfinderportal/img/favicon.png (from https://themewagon.github.io/jobfinderportal/contact.html)
+10:40:47	Error: 	"Not Found" (404) at link https://themewagon.github.io/jobfinderportal/"https://maps.gstatic.com/mapfiles/openhand_8_8.cur" (from https://themewagon.github.io/jobfinderportal/contact.html)
+
+HTTrack Website Copier/3.49-2 mirror complete in 53 seconds : 145 links scanned, 132 files written (9173131 bytes overall) [7161325 bytes received at 135119 bytes/sec], 3492080 bytes transferred using HTTP compression in 76 files, ratio 36%, 24.1 requests per connection
+(12 errors, 0 warnings, 0 messages)

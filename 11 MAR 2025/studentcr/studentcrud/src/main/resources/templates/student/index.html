@@ -16,11 +16,13 @@
     </style>
 </head>
 <body>
+  <div th:replace="fragment/nav :: nav"></div>
 
   <div class="container mt-3">
     <h1 style="color:black;"><b>Student List</b></h1>
     <a th:href="@{/users/create}" class="btn btn-warning m-3"><b>Add Student</b></a>
     <a th:href="@{/Om/create}" class="btn btn-warning m-3"><b>Add Employee</b></a>
+    <a th:href="@{/ganga/create}" class="btn btn-warning m-3"><b>Add Staff</b></a>
     <br>
     
     <table class="table table-success table-striped">

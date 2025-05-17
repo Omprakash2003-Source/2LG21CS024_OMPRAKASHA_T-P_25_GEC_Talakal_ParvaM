@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center px-4">
+  <div class="max-w-md w-full bg-white rounded-lg shadow-lg p-8">
+    <h1 class="text-3xl font-semibold text-gray-800 mb-6 text-center">Admin Login</h1>
+    <form action="Admin Dashboard.html" method="GET" class="space-y-6">
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="you@example.com"
+          class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4ecb4e] focus:border-[#4ecb4e]"
+        />
+      </div>
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          placeholder="Enter your password"
+          class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#4ecb4e] focus:border-[#4ecb4e]"
+        /> 
+        <br> <br>
+      </div>
+      <br>
+      <div class="flex items-center justify-between">
+        <div class="flex items-center">
+          <input
+            id="remember_me"
+            name="remember_me"
+            type="checkbox"
+            class="h-4 w-4 text-[#4ecb4e] focus:ring-[#4ecb4e] border-gray-300 rounded"
+          />
+          <label for="remember_me" class="ml-2 block text-sm text-gray-900">Remember me</label>
+        </div>
+        <a href="#" class="text-sm text-[#4ecb4e] hover:text-[#3da93d] font-medium">Forgot password?</a>
+      </div>
+      <button
+        type="submit"
+        class="w-full flex justify-center py-3 px-4 border border-[#4ecb4e] rounded-md shadow-sm text-white bg-[#4ecb4e] hover:bg-[#3da93d] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#4ecb4e] font-semibold text-lg"
+      >
+        <a th:href="@{/admin/dashboard}">Submit</a>
+      </button>
+    </form>
+  </div>
+</body>
+</html>
